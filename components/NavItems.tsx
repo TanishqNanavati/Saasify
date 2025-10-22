@@ -24,13 +24,17 @@ const NavItems = () => {
     <nav className="flex items-center gap-4">
         {
             navItems.map(({label,href})=>(
-                <Link 
-                href={href} 
-                key={label}
-                className={cn(pathName === href && 'text-primary font-semibold')}
-                >
+                <Link
+                    href={href}
+                    key={label}
+                    className={cn(
+                        "text-gray-600 hover:text-primary transition",
+                        pathName === href && "text-primary font-semibold"
+                    )}
+                    >
                     {label}
                 </Link>
+
             ))
         }
     </nav>
