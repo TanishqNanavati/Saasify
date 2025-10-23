@@ -94,7 +94,7 @@ const CompanionComponent = ({companionId,subject,topic,name,userName,userImage,s
         serverMessages : [],
       }
 
-      // @ts-expect-error
+      // @ts-expect-error: SDK expects a different type here, safe to ignore
       vapi.start(configureAssistant(voice,style),assistantOverrides)
     }
 
