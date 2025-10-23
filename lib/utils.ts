@@ -55,13 +55,8 @@ export const configureAssistant = (voice: string, style: string) => {
       ],
     },
 
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-expect-error: SDK expects a different type here, safe to ignore
-    clientMessages: [],
-
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-    // @ts-expect-error: SDK expects a different type here, safe to ignore
-    serverMessages: [],
+    clientMessages: undefined,
+    serverMessages: undefined,
   };
   return vapiAssistant;
 };
