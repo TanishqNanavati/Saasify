@@ -55,9 +55,10 @@ export const configureAssistant = (voice: string, style: string) => {
       ],
     },
 
-    //@ts-expect-error
+    // @ts-expect-error – vapi SDK types don't include clientMessages yet
     clientMessages: [],
-    //@ts-expect-error
+
+    // @ts-expect-error – vapi SDK types don't include serverMessages yet
     serverMessages: [],
   };
   return vapiAssistant;
